@@ -37,3 +37,12 @@ var deleteDuplicates = function(list) {
   return cleanList;
 };
 
+// Check the Length of the new array //
+var newGroceries = deleteDuplicates(groceries);
+
+console.log(newGroceries.length);
+
+// Create a numbered list of the grocery items //
+newGroceries.forEach(function(item, index) {
+  console.log(`#${index +1} - ${item}`);
+});
